@@ -1,0 +1,64 @@
+
+
+Bookings
+UTM Parameter Tracking
+Cal.com allows you to track UTM parameters on your booking pages to better understand where your bookings are coming from. This helps you measure the effectiveness of your marketing campaigns and traffic sources.
+​
+Automatic UTM Tracking
+Cal.com
+automatically tracks
+the following standard UTM parameters without any additional setup required:
+utm_source
+utm_medium
+utm_campaign
+utm_term
+utm_content
+Simply include these parameters in your booking links, and Cal.com will automatically capture and store them when someone makes a booking.
+Example:
+https://cal.com/rick/get-rick-rolled?utm_source=google&utm_medium=cpc&utm_campaign=summer_sale
+​
+Manual Tracking for Custom Parameters
+If you need to track
+custom or non-standard UTM parameters
+beyond the five automatically supported ones listed above, you can use the manual hidden booking fields approach. This is a three-step process:
+Add hidden questions to your booking page for the custom params you want to track
+Send those params in the booking link
+View the custom parameters in the booking details page
+​
+Add hidden questions to your booking page
+You can follow
+booking-questions
+to know how to add a question to the booking page of an event type.
+Create a booking question for each of the
+custom
+UTM params that you want to track (remember, the standard 5 parameters are tracked automatically).
+Make sure to toggle the question to “Hidden”
+Ensure the following:
+Input type is “Short Text”
+Identifier is one of the
+custom
+UTM params that you want to track (e.g.,
+utm_content_variant
+)
+Question is toggled to “Hidden”
+Required is set to “No”
+​
+Send custom params in the booking link
+You need to send your custom params in the booking link. When someone books through that link, both the automatic standard UTM parameters and your custom parameters (for which you have added questions) will be captured.
+Example with both automatic and custom parameters:
+https://cal.com/rick/get-rick-rolled?utm_source=google&utm_medium=cpc&utm_campaign=summer_sale&utm_content_variant=content-variant
+In this example:
+utm_source
+,
+utm_medium
+, and
+utm_campaign
+will be
+automatically tracked
+utm_content_variant
+will be captured via your hidden booking questions
+​
+Viewing UTM Parameters
+You can view both automatically tracked and manually tracked UTM parameters in the booking details page when you are logged in to your Cal.com account.
+Note:
+Only the hosts of the booking will be able to view the UTM parameters and hidden booking questions’ answers.

@@ -1,0 +1,8 @@
+
+
+Apps and Integrations
+How to Cal.com with Attio
+To use Cal.com with Attio, you only need two things:
+You need to have an account on both platforms
+You need to connect Google Calendar to Attio
+You need to connect Google Calendar to Cal.com

@@ -1,0 +1,33 @@
+
+
+Embedding
+Getting Embed Code Snippets
+You can get code snippets for
+React
+or
+HTML
+and also configure many different aspects of embeds using the
+Embed Snippet Generator
+. The code snippet is automatically updated with the changes you make in it.
+Here is how you can access it.
+Click on three dots of the event type and click on the option
+Embed
+Configure as you require and then
+a. Copy the HTML code snippet
+or,
+b. Copy the React code snippet
+​
+What can you configure
+Size of embed
+Theme
+Toggle event type details
+Brand color
+Layout
+Floating button text
+Floating button position at the bottom
+You can also configure all the custom CSS variables supported by cal.com app.
+Here is a list of all the supported CSS variables
+.
+Also,
+here is the codeSandbox demo
+for a configuration where the look and feel of the embed is changed.

@@ -1,0 +1,34 @@
+
+
+Event Types
+Booking Questions
+When you create a new event type, a few basic booking questions are already created for your new event type.
+If you’d like to collect more information about your attendees, you can use our booking questions feature and get the necessary information filled out by your attendees when booking. The booking questions can be either required or optional, depending on your needs.
+Let’s say that you require the phone number of each attendee. You must select the correct input type, write up your placeholder and label, and tick the requirement.
+A new field will appear on the booking page where attendees enter the booking details.
+You can also make use of the booking questions feature to allow prefilling the
+booking fields
+​
+Booking field identifier
+The
+identifier
+for booking questions is a unique text input that users provide when creating a booking question. This identifier serves as a distinctive key for each specific booking question, establishing a clear and unique reference that can be used throughout the platform wherever that question is addressed or its answers are processed.
+The primary utility of the identifier emerges when individuals schedule meetings. As they fill out booking forms, the responses they provide are tied back to the specific booking questions via these identifiers. This system ensures precision and clarity, as each answer is unmistakably linked to its corresponding question, eliminating any potential confusion especially when similar or related questions are present.
+By utilizing the
+identifier
+for booking questions, users benefit from a more organized, efficient, and error-resistant way of handling booking data, both within the platform and in conjunction with external systems. This streamlined approach not only enhances data management and integrity but also contributes significantly to the overall user experience.
+​
+Phone-based bookings
+By default, the booking form requires an attendee’s email address to confirm a booking. With phone-based bookings, you can require a phone number instead, so attendees can book using only their phone number without providing an email.
+This is useful when SMS is your primary channel for confirmations and reminders, when your audience is more likely to share a phone number than an email, or for regions and workflows where phone contact is the standard way to reach attendees.
+To enable phone-based bookings, go to the
+Confirmation
+section at the top of your event type’s booking questions and switch the toggle from
+Email
+to
+Phone
+. This sets the phone number as the required field your booker must provide to receive confirmations, instead of an email address. Once you’ve selected
+Phone
+, click
+Save
+.

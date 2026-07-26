@@ -1,0 +1,83 @@
+
+
+Cal.ai
+What is Cal.ai?
+Cal.ai is an AI-powered scheduling assistant that automates the management of your meetings. It integrates directly with
+Cal.com
+workflows, allowing you to book, reschedule, cancel, confirm, and follow up on meetings seamlessly. Through phone calls, Cal.ai communicates with participants on your behalf, ensuring your schedule is always up to date, even when you’re unavailable. It works 24/7, handling scheduling tasks automatically without requiring manual intervention.
+​
+How does Cal.ai work and what are the use cases?
+Cal.ai is fully integrated into Cal.com workflows. Once configured, it can automatically:
+Confirm meeting details with participants via phone calls
+Book new appointments based on your availability
+Reschedule or cancel existing meetings when needed
+Follow up with participants to ensure meetings are kept
+Since Cal.ai operates within Cal.com workflows, any actions taken by the assistant, such as making calls or sending messages, are directly tied to your account’s calendar and settings. This ensures seamless synchronization between your meetings and Cal.ai’s scheduling tasks.
+​
+Set up a Cal.ai workflow
+Setting up a Cal.ai workflow is simple:
+Create a Cal.com account
+or
+log into your existing account
+.
+Go to the workflows tab (
+app.cal.com/workflows
+) and create a new workflow by clicking on ‘+new’.
+Select a trigger for the workflow (see triggers), select event type, optionally add the time when the trigger has to happen.
+Add the action: ‘Call attendee using Cal.ai Voice Agent’.
+Connect a phone number by either buying or importing one.
+Configure your AI agent by changing the prompt with the initial message and general prompt (you can add variables in the prompt).
+Test the Cal.ai Agent! You can test the Cal.ai Agent by calling the phone number or by using the ‘Test Web Call’ functionality. Please be aware that both web calls and phone number calls consume credits.
+Done! Your AI-powered scheduling assistant is now ready to manage your meetings.
+​
+Available triggers
+Before event starts
+When event is canceled
+When new event is booked
+After event ends
+When event is rescheduled
+When booking is rejected
+When booking is requested
+When booking payment is initiated
+When booking payment is successful
+When booking no-show is updated
+​
+Add a phone number to your Cal.ai workflow
+You can easily add a phone number by purchasing one or importing an existing number. At first, follow the previous steps on how to set up a Cal.ai workflow. When clicking on ‘Connect Phone Number’ follow the following steps:
+​
+Buying a phone number
+You can buy a phone number from Cal.com by following the below steps:
+Click on ‘Buy’. A pop-up will appear. You can buy a US phone number for $5 per month. You can only buy US phone numbers. For other countries, you can import your own Twilio phone number. Supported call destinations are: United States, Australia, Spain, Mexico, Japan, Italy, India, Germany, United Kingdom, France, Canada.
+Click on ‘Buy US number for $5/month. You’ll get redirected to a checkout page.
+Pay for the phone number.
+Done! Your phone number is added to the workflow.
+​
+Importing a (Twilio) phone number
+You can import a Twilio phone number by following the below steps:
+Click on ‘Import’. A pop-up will appear with instructions to import your number.
+Add your phone number.
+Add the Termination URI (The termination URI to uniquely identify your elastic SIP trunk. This is used for outbound calls. For Twilio elastic SIP trunks it always ends with .
+pstn.twilio.com
+).
+Add advanced settings if needed with the SIP Trunk User Name, SIP Trunk Password and Nickname.
+Click on ‘Create’ and you’re done!
+If you have trouble importing your phone number, check this guide:
+https://cal.com/help/importing/import-numbers
+.
+For team workflows, only team admins or owners (or admins/owners of the parent organization) can buy, import, update, or remove phone numbers. Members can still use phone numbers that are already connected, but cannot manage them.
+​
+Add/edit a prompt in your
+Cal.ai
+workflow?
+Prompts define the messages Cal.ai uses when interacting with meeting participants. Prompts also make sure how your agent interpret situations and which steps it should follow. There’s a default prompt in every single workflow, however you can edit the prompt to your liking. To edit a prompt follow the steps on how to set up a Cal.ai workflow. Then follow the additional steps:
+Navigate to prompt settings within your workflow by clicking on the ‘Edit’ button.
+Add your initial message: The first message the agent will say when starting a call.
+Add your general prompt: This prompt defines the agent’s role and primary objectives.
+Add variables to your prompt: Variables allow you to create personalized messages that Cal.ai uses during phone calls, ensuring that each interaction is tailored to your needs. Learn more about the available variables
+here
+Click on ‘Save’ and you’re done editing your prompt.
+​
+How does pricing work for Cal.ai? What is the cost per minute?
+Cal.ai pricing is based on the number of credits you use. Each call consumes a set number of credits depending on its length and complexity. The charge per minute is 29 credits, equalling $0.29 per minute.
+To learn about pricing for Cal.ai, please check out our
+credit system

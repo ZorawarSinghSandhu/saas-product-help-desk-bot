@@ -1,0 +1,32 @@
+
+
+Event Types
+Require/Exclude Email Domains (Booking Question)
+Control who can book by requiring or excluding specific email domains like @company.com or public domains like @gmail.com.
+The
+Email
+field in Cal.com’s booking questions supports
+domain-level restrictions
+, allowing you to control who can (or can’t) book time with you based on their email address.
+​
+Use Case
+This is useful when:
+You only want people from a specific company (e.g.,
+@company.com
+) to book.
+You want to
+exclude free/public domains
+like
+@gmail.com
+or
+@yahoo.com
+.
+You’re running internal meetings and only want your organization’s members to access them.
+​
+How to Configure
+Go to your Booking form settings of your Event type setup. Under **Booking questions, **find the Email field. Click on
+Edit
+next to the booking question, and you’ll see options to:
+Require emails that contain (…)
+Exclude emails that contain (…)
+Simply use the fields to specify or exclude email domains for your specific use case.

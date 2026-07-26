@@ -1,0 +1,120 @@
+
+
+Enterprise
+Members Onboarding
+​
+👋 Welcome!
+Welcome aboard! This guide is for team members who have been invited to use
+Cal.com
+through their organization.
+​
+✅ Step 1: Accept Your Invitation
+Look for an invite link in your inbox to join your organization’s
+Cal.com
+workspace.
+When you click the invite:
+Create a new account or log in to your existing
+Cal.com
+account
+Your profile will be automatically linked to your organization
+You might also be invited to other teams within the organization, in which case, you can always visit
+Teams
+page and accept the invites.
+🔐 If your organization uses SSO (Single Sign-On), simply log in with your work email.
+​
+📆 Step 2: Connect Your Calendar
+If your organization uses
+Delegation Credential
+, your calendar may already be connected automatically. You can skip to selecting which calendars to check for conflicts.
+Connect your work calendar to manage availability and prevent double bookings:
+Go to
+App Store → Calendars
+Search for your provider and authorize access
+Select which calendars
+Cal.com
+should check for conflicts (toggle them on) and where to place booked events (Set as destination Calendar)
+​
+📅 Step 3: Set Up Your Booking Page
+Please check with your organization admin if they have already assigned events to you.
+Your booking link allows clients and teammates to schedule time with you. Here’s how to configure it:
+Go to
+Event Types
+Create or edit an event (e.g., “1:1 Coaching Session”). Note that any events assigned to you by your admin might be read-only and not editable by you.
+Customize:
+Duration (e.g., 30 minutes)
+Location (Zoom, Google Meet, in-person, phone)
+Availability (set working hours)
+Buffer times and limits
+🎨 Your company’s default settings and branding may already be in place — you only need to personalize if desired.
+​
+🔗 Step 4: Share Your Booking Link
+After setting up your event types, share your link through:
+Your email signature
+Inside Slack or Microsoft Teams
+On internal tools or client dashboards
+Example:
+https://cal.com/yourname/1-1-session
+For round-robin teams or routed events, your admin may provide a team-wide link that automatically assigns bookings.
+​
+✉️ Step 5: Set Up Reminders
+Cal.com
+can automatically send:
+Email confirmations
+Reminders (Please check with your admin if they have already set up reminder workflows. In any case, you can create new workflows for your event types. You can create workflows by visiting the
+workflows page
+)
+​
+🔒 Step 6: Review Privacy & Security
+Your calendar data is private — only availability is shared with bookers.
+Cal.com
+is compliant with major data regulations including:
+GDPR
+SOC 2
+HIPAA (on request for healthcare orgs)
+You can control:
+Which calendars
+Cal.com
+can access
+Who sees your availability
+Whether your events are public or private
+Read more about our security practices →
+​
+📊 Optional: Track Your Bookings
+You can visit the
+Bookings
+page in the cal.com dashboard to view your:
+Upcoming bookings
+Past bookings
+Cancelled bookings
+And also mark guests as No-Show (
+Learn more
+)
+You can also access the
+Insights Dashboard
+to view your booking related insights.
+​
+Leaving a team
+If you no longer need to be part of a team, you can remove yourself without requiring an admin.
+1
+Open team settings
+Go to the
+Teams
+page and select the team you want to leave.
+2
+Leave the team
+Scroll down to the
+Danger zone
+section and select
+Leave team
+. Confirm when prompted.
+Leaving a team removes your access to that team’s event types, routing forms, and shared resources. If your organization uses
+seat-based billing
+, your departure may affect the team’s seat count.
+​
+🤝 Need Help?
+If you have questions or encounter issues:
+Check out our
+Help Center
+Reach out to your team admin to confirm the support plan with us and the best way to reach us.
+​
+🏁 You’re All Set!

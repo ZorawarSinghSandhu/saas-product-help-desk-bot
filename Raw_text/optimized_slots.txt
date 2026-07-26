@@ -1,0 +1,47 @@
+
+
+Event Types
+Optimized Slots
+Optimized Slots
+help you make the most out of your availability by going beyond fixed, predefined start times. Instead of only starting events on the hour or half-hour, Cal.com intelligently adjusts start times to accommodate as many appointments as possible, while still prioritizing clean start times when they’re available.
+​
+How It Works
+By default, event slots are generated at predefined intervals (for example, every 60 minutes starting on the hour). This means booking options follow a fixed slot grid, not necessarily the exact start of someone’s availability.
+That can sometimes cause confusion. For example, if availability starts at 8:45 and the event length is 60 minutes, the first visible slot may appear at 9:00, because the system is aligning to predefined slot start times rather than the earliest possible start time.
+Instead of showing slots at odd times like 9:07 or 10:23, Cal.com rounds to familiar times that are easier to remember. This makes your booking page cleaner and more professional for the people scheduling with you.
+60-minute intervals start on the hour (9:00, 10:00, 11:00…)
+30-minute intervals start on the hour and half-hour (9:00, 9:30, 10:00…)
+20-minute intervals start every 20 minutes (9:00, 9:20, 9:40…)
+15-minute intervals start on quarter hours (9:00, 9:15, 9:30, 9:45…)
+10-minute intervals start every 10 minutes (9:00, 9:10, 9:20…)
+5-minute intervals start every 5 minutes (9:00, 9:05, 9:10…)
+Optimized Slots adjust this logic so that availability dynamically adapts around conflicts and real open time, helping ensure no usable time is left behind. In practice, this means booking options can better reflect the actual time someone is free, rather than only fixed interval boundaries.
+​
+Example
+Event Setup
+Event length: 60 minutes
+Availability: 9:00 AM – 11:30 AM
+Busy time: 10:00 AM – 10:15 AM
+Without Optimized Slots
+9:00 AM – 10:00 AM
+With Optimized Slots
+9:00 AM – 10:00 AM 10:15 AM – 11:15 AM
+With Optimized Slots enabled, Cal.com adjusts the start time of your first slot to 10:15 AM after your busy block, allowing you to capture an extra meeting that would otherwise be impossible.
+​
+Why Use Optimized Slots?
+Maximize availability:
+Fit in more appointments throughout the day.
+Stay flexible:
+Avoid wasted gaps caused by short conflicts.
+Keep it clean:
+Still favors standard start times (on the hour/half-hour) when possible.
+​
+How to Enable Optimized Slots
+Go to your event type.
+Open
+Advanced Settings
+.
+Toggle
+Optimized Slots
+on.
+Once enabled, your scheduling automatically adjusts to create the most efficient slot lineup possible.

@@ -1,0 +1,21 @@
+
+
+Event Types
+Create your first event type
+A quick walkthrough of how to create event types.
+​
+The basics
+Head over to the
+event types
+page, then click the
+New event type
+button in the top right.
+You’ll now be presented with the create event type dialog, which prompts you to enter in the basic information needed to get a working event type set up:
+Title
+URL (e.g. cal.com/bailey/
+example-event
+)
+Description
+Length
+New event type dialog
+This is all you need to get an event type up and running, but you can configure additional settings for greater control.

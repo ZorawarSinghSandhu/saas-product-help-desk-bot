@@ -1,0 +1,24 @@
+
+
+Availabilities
+Team Availability
+How to view your teams availability schedules
+Switching between views
+Paid subscribers have two availability profiles: their personal availability and the team availability. Personal availability schedules can be accessed by clicking on the “My Availability” tab.
+If you want to switch to team view, simply click on the tab marked team availability.
+From within this area, you can create, delete, and edit team availability schedules, as long as you’re an account admin or owner.
+To create a new team availability schedule, simply follow the steps below:
+Click the ”+ New” button in the upper right-hand side of the screen.
+This will cause a pop-up window to open.
+Within this pop-up window is a field labeled “Name.”
+Type the name of your new availability schedule in this field.
+Next, click on the “Continue” button.
+Your availability schedule has been created, and you will now be redirected to the settings page where there are additional customization options.
+These customization options include things like the days and hours of operation, as well as the timezone that the availability schedule is located within. This is also the area where you can add custom date overrides or choose to make this availability schedule the default one all team events automatically reference.
+Once you have finished making all of your changes, just click the save button located in the upper right-hand corner of the screen to save your hard work.
+Learn more about:
+Date Overrides
+Multiple Schedules
+Multiple Slots
+Add New Availability
+Edit Availability

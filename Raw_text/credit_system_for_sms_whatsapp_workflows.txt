@@ -1,0 +1,35 @@
+
+
+Workflows
+Credit System for SMS/Whatsapp workflows
+​
+What Are Credits Used For?
+Sending SMS messages
+Sending WhatsApp messages
+​
+How Many Credits Do You Get?
+Enterprise plans
+: Unlimited credits. Enterprise organizations are not charged for SMS, WhatsApp, or Cal.ai credit usage.
+Platform organizations
+: Unlimited credits, same as Enterprise.
+Organizations (non-Enterprise)
+: 1000 credits per team member renewed monthly. Additional credits can be purchased in the Organization billing settings.
+Team Plan
+: 750 credits per team member, renewed monthly. Additional credits can be purchased in the team billing settings.
+Free Users
+: No free credits. You can purchase credits in your
+Billing Settings
+.
+​
+How Much Does It Cost to Send Messages?
+US & Canada
+: Free
+Other Countries
+: One credit = $0.01 and we charge you based on Twilio’s costs per SMS plus an 80% processing fee (
+Twilio SMS Pricing
+)
+​
+What Happens If You Run Out of Credits?
+We’ll send warning emails when you’re low on credits. For teams, all admins will be notified.
+Once your account or team runs out of credits, SMS and WhatsApp messages will stop immediately. Messages will be sent via email instead.
+Enterprise and Platform organizations are not subject to these limits — their credits are unlimited.

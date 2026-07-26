@@ -1,0 +1,66 @@
+
+
+Event Types
+Cal.Video Location: Advanced Settings
+When you pick
+Cal.Video
+as the location for an event type, you can reveal extra configuration options by selecting
+Show advanced settings
+. These controls let you manage recording, transcription, guest permissions, and the post-call experience.
+Once you select CalVideo for your Event Type, you can access these settings by clicking on “Show advanced settings” below the dropdown.
+​
+Recording
+​
+Disable recording for guests
+Prevents the guest from starting a recording inside the meeting.
+​
+Disable recording for organizer
+Blocks organizers from starting a recording.
+Useful for teams where only the owner should control recordings.
+​
+Automatic recording
+Starts recording automatically as soon as the organizer joins the room.
+This removes the need for any manual action.
+Organization admins can disable Cal Video recording download emails for all attendees across the organization. This setting is found under
+Organization Settings → Guest notifications
+. When enabled, attendees will not receive recording download links, but organizers will still get their recording emails.
+​
+Viewing recordings on cal.eu
+On the EU region (
+cal.eu
+), the
+View recordings
+action is available on any past, confirmed Cal Video booking, even if Cal.com did not detect a recording file for that meeting. This lets organizers open the recordings dialog and check whether a recording is available whenever they suspect one exists.
+On
+cal.com
+and other regions,
+View recordings
+is only enabled when a recording was captured for the booking.
+​
+Transcription
+​
+Transcription on join
+Enables transcription automatically after the organizer enters the call.
+​
+Disable transcription for guests
+Guests cannot turn transcription on.
+​
+Disable transcription for organizer
+Stops organizers from enabling transcription when this must be controlled manually.
+​
+Transcription language
+Choose the language used for AI transcription on this event type. English is the default. Select
+Multilingual (auto-detect)
+for meetings where participants switch between languages, or pick a specific language when you know it in advance to improve accuracy.
+Supported languages include Arabic, Bulgarian, Catalan, Chinese (Cantonese), Croatian, Czech, Danish, Dutch, English, Finnish, Flemish, French, French (Canada), German, German (Switzerland), Greek, Hebrew, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Latvian, Lithuanian, Malay, Norwegian, Polish, Portuguese, Portuguese (Brazil), Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Spanish (Latin America), Swedish, Thai, Turkish, Ukrainian, and Vietnamese.
+Transcription settings, including language selection, are available on team plans.
+​
+Guest Access
+Require email to join
+Guests must provide an email address before entering the call.
+This works as a simple verification step.
+​
+Post-Call Behavior
+Redirect URL
+Send participants to any URL after the meeting ends.
+Common use cases include thank you pages, surveys, or onboarding flows.

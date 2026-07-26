@@ -1,0 +1,356 @@
+
+
+Embedding
+Embed Events
+​
+Listening to Events
+You can listen to an event that occurs in embedded cal link as follows. You can think of them as DOM events.
+<
+script
+>
+Cal("on",
+{
+action
+:
+"ANY_EVENT_NAME"
+,
+callback
+: (
+e
+)
+=>
+{
+// `data` is properties for the event.
+// `type` is the name of the event(You can also call it type of the event.) This would be same as "ANY_EVENT_NAME" except when ANY_EVENT_NAME="*" which listens to all the events.
+// `namespace` tells you the Cal namespace for which the event is fired/
+const
+{
+data
+,
+type
+,
+namespace
+}
+=
+e
+.
+detail
+;
+}
+}
+)
+</
+script
+>
+​
+Usage
+Wrong ❌
+Correct ✅
+Comments
+Cal.ns.yournamespace.on(...)
+Cal.ns.yournamespace('on', ...)
+To be used when a namespace is used which you can identify by seeing if “init” call has namespace in it.
+Cal("init", "yournamespace", { origin: "https://cal.com" })
+.
+The Embed snippet you get from the Cal.com app uses a namespace derived from the event type slug.
+Cal.on(...)
+Cal('on', ...)
+To be used when namespace is not used which you can identify by seeing if the “init” call has no namespace in it.
+Cal("init", { origin: "https://cal.com" })
+​
+Event Reference
+​
+eventTypeSelected
+Description:
+When user chooses an event-type from the listing.
+Properties:
+eventType
+:
+object
+- Event Type that has been selected
+​
+bookingSuccessfulV2
+It deprecates bookingSuccessful event.
+Description:
+When a fresh booking is successfully done. It might not be confirmed.
+Properties:
+uid
+:
+string
+|
+undefined
+- Unique identifier for the booking
+title
+:
+string
+|
+undefined
+- Title of the booking
+startTime
+:
+string
+|
+undefined
+- Start time of the booking
+endTime
+:
+string
+|
+undefined
+- End time of the booking
+eventTypeId
+:
+number
+|
+null
+|
+undefined
+- Event type id of the booking
+status
+:
+string
+|
+undefined
+- Status of the booking
+paymentRequired
+:
+boolean
+- Whether payment is required for the booking
+isRecurring
+:
+boolean
+- Whether the booking is recurring
+allBookings
+:
+object
+- Array of objects with
+startTime
+and
+endTime
+. Applicable only if
+isRecurring
+is
+true
+videoCallUrl
+:
+string
+- URL of the video call
+​
+rescheduleBookingSuccessfulV2
+It deprecates rescheduleBookingSuccessful event.
+Description:
+When a booking is rescheduled.
+Properties:
+uid
+:
+string
+|
+undefined
+- Unique identifier for the booking
+title
+:
+string
+|
+undefined
+- Title of the booking
+startTime
+:
+string
+|
+undefined
+- Start time of the booking
+endTime
+:
+string
+|
+undefined
+- End time of the booking
+eventTypeId
+:
+number
+|
+null
+|
+undefined
+- Event type id of the booking
+status
+:
+string
+|
+undefined
+- Status of the booking
+paymentRequired
+:
+boolean
+- Whether payment is required for the booking
+isRecurring
+:
+boolean
+- Whether the booking is recurring
+allBookings
+:
+object
+- Array of objects with
+startTime
+and
+endTime
+. Applicable only if
+isRecurring
+is
+true
+​
+linkReady
+Description:
+Tells that the link is ready to be shown now.
+Properties:
+None
+​
+linkFailed
+Description:
+Fired if link fails to load.
+Properties:
+code
+:
+string
+- Error Code
+msg
+:
+string
+- Human Readable msg
+data
+:
+object
+- More details to debug the error (includes url)
+​
+dryRunBookingSuccessfulV2
+Description:
+When a dry run booking is successfully created (test mode).
+Properties:
+Same properties as
+bookingSuccessfulV2
+(without
+uid
+)
+​
+dryRunRescheduleBookingSuccessfulV2
+Description:
+When a dry run reschedule is successful (test mode).
+Properties:
+Same properties as
+bookingSuccessfulV2
+(without
+uid
+)
+​
+bookingCancelled
+Description:
+When a booking is cancelled.
+Properties:
+booking
+:
+object
+- Booking details including cancellationReason
+organizer
+:
+object
+- Organizer details (name, email, timeZone)
+eventType
+:
+object
+- Event type details
+​
+routed
+Description:
+When a routing form routes to an action (event type, external URL, or custom page).
+Properties:
+actionType
+:
+string
+- Type of action: “customPageMessage”, “externalRedirectUrl”, or “eventTypeRedirectUrl”
+actionValue
+:
+string
+- The value/URL of the action
+​
+navigatedToBooker
+Description:
+When user navigates to the booker interface.
+Properties:
+None
+​
+bookerViewed
+Description:
+Fires once when the booker becomes visible to the user for the first time. Not fired during prerendering.
+Properties:
+eventId
+:
+number
+|
+null
+- Event type ID (null if slots not loaded)
+eventSlug
+:
+string
+|
+null
+- Event type slug (null if slots not loaded)
+slotsLoaded
+:
+boolean
+- Whether slots are loaded
+​
+bookerReopened
+Description:
+Fires when the booker is reopened after the modal was closed. Distinguishes between first view and subsequent reopens.
+Properties:
+eventId
+:
+number
+|
+null
+- Event type ID (null if slots not loaded)
+eventSlug
+:
+string
+|
+null
+- Event type slug (null if slots not loaded)
+slotsLoaded
+:
+boolean
+- Whether slots are loaded
+​
+bookerReloaded
+Description:
+Fires when the booker undergoes a full page reload within the modal.
+Properties:
+eventId
+:
+number
+|
+null
+- Event type ID (null if slots not loaded)
+eventSlug
+:
+string
+|
+null
+- Event type slug (null if slots not loaded)
+slotsLoaded
+:
+boolean
+- Whether slots are loaded
+​
+bookerReady
+Description:
+Fires when the booker view is loaded and slots are ready for user interaction. Only fires for booker pages (not booking success or other views).
+Properties:
+eventId
+:
+number
+- Event type ID
+eventSlug
+:
+string
+- Event type slug
+With GTM App enabled for an Event type, these events are automatically sent to GTM and GTM could be setup to send these events to your desired destination like Google Analytics, etc.

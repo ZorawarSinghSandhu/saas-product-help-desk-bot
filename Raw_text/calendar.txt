@@ -1,0 +1,43 @@
+
+
+Quick Start
+Calendar
+Here you can find articles on how to connect various calendars to your Cal.com account.
+​
+How to Connect Your Apple Calendar
+Connecting your Apple Calendar helps Cal.com check when you’re free or busy. This avoids double bookings and ensures new bookings are added to the right calendar.
+Follow these steps:
+Log in to your Cal.com account
+.
+Go to
+Settings
+and click the
+Calendars
+tab.
+Add a Calendar
+:
+Click
+Add Calendar
+.
+You’ll be taken to our App Store.
+Install the Calendar
+:
+Choose
+Apple Calendar
+and click
+Install
+.
+Log in with Your App-Specific Password
+:
+Head over to
+https://appleid.apple.com/account/manage
+and generate your app-specific password.
+Paste the password in the password section.
+Set Up and Adjust Settings
+:
+You’ll see your calendar in the
+Installed Calendars
+section.
+Select which calendar to check for conflicts.
+Add more calendars if needed.
+You’re all set! Cal.com will now manage your availability and prevent scheduling
