@@ -1,4 +1,4 @@
-
+https://cal.com/help/auth-and-provision/scim-okta
 
 Auth and Provisioning
 Setting up SCIM with Okta

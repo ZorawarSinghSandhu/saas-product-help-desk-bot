@@ -1,4 +1,4 @@
-
+https://cal.com/help/webhooks
 
 Developers
 Webhooks
@@ -93,8 +93,10 @@ After Guests Cal Video No-Show
 Form Submitted
 ,
 Form Submitted (No Event)
-, and
+,
 Calendar Entry Rejected
+, and
+Delegation Credential Rotation Required
 .
 Secret: You can provide a secret key with this webhook and then
 verify it
@@ -156,6 +158,10 @@ without
 a scheduled event (form-only flow).
 Calendar Entry Rejected
 An external attendee declines a Cal.com event from their connected Google or Microsoft 365 calendar.
+Delegation Credential Rotation Required
+The client secret for a Microsoft 365
+Delegation Credential
+that has opted out of automatic rotation is approaching expiry (~14 days out). Organization-level only.
 ​
 Seated event types
 For event types with

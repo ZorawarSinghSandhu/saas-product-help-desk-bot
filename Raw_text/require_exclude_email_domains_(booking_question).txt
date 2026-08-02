@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/email-bookingq
 
-
-Event Types
+Booking form
 Require/Exclude Email Domains (Booking Question)
 Control who can book by requiring or excluding specific email domains like @company.com or public domains like @gmail.com.
 The

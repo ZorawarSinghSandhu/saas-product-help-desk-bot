@@ -1,4 +1,4 @@
-
+https://cal.com/help/apps-and-integrations/syncing-third-party
 
 Apps and Integrations
 How to sync third party apps with a self-hosted Cal.com instance

@@ -13,10 +13,7 @@ load_dotenv(override = True)
 groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 collection = chroma_client.get_collection(name="calcom_helpdesk")
 
-
 def get_answer(query):
-    
-    # query = "What is the refund policy for annual plans?"
 
     encoded_query = model.encode(query)
 
@@ -24,7 +21,11 @@ def get_answer(query):
         query_embeddings = encoded_query,
         n_results = 3
         )
-
+    
+    sources = [chunk['file_url'] for chunk in results['metadatas'][0]]
+        
+    file_headings = [chunk['file_heading'] for chunk in results['metadatas'][0]]
+    
     response = groq_client.chat.completions.create(
         messages=[
             {
@@ -44,10 +45,4 @@ def get_answer(query):
         model="llama-3.3-70b-versatile"
     )
 
-    return(response.choices[0].message.content)
-
-query = "What is the refund policy for annual plans?"
-
-answer = get_answer(query)
-
-print(answer)
+    return({'answer': response.choices[0].message.content, 'sources': sources, 'file_headings': file_headings})

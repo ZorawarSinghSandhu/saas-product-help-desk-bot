@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/redirect-on-no-routing-form
 
-
-Event Types
+Privacy & security
 Redirect when accessed without a routing form
 Send visitors who open an event type directly, without going through a routing form, to a URL you control.
 This setting lets you send visitors to a URL of your choice when they open an event type directly instead of arriving through a routing form. It’s useful for event types that are only meant to receive traffic that has already been qualified by a routing form, so anyone who lands on the booking page some other way gets pointed to the right place.

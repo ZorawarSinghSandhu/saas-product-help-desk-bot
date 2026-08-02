@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/managed-events
 
-
-Event Types
+Teams
 Managed Events
 Create and manage shared event types for your team from one place.
 Team admins can manage event types for their members, making it easy to create common event types for all members and manage them from one place.

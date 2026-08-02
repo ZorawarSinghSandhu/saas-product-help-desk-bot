@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/split-name
 
-
-Event Types
+Booking form
 How to split fullname into firstname and lastname in the public booking page
 By default, Cal.com booking page has a fullname text input field for the scheduler to put their name in. This usually works just fine for most people. However, at times, it is preferable to take the firstname and lastname of the scheduler as separate inputs in the booking form.
 Cal.com provides the option to split the fullname input field in the booking form into firstname and lastname. To do that, you can do the following:
@@ -12,24 +12,15 @@ Click on Advanced Tab
 3
 Scroll to Booking Questions Section
 4
-Click on the Edit Button in Front of Your Name
-5
-Click on the Toggle
-In the dialog that opens, click on the toggle that says
-Split "Full name" into "First name" and "last name"
-6
 Fill the label and optional placeholder values, and click on save
 Fill the label and optional placeholder values, and click on
 save
 .
-7
+5
 Save Changes
 Remember to click on the
 save
 button in the event type settings as well.
-8
-Check the Public Booking Page
-Head to the public booking page of this event type, you will notice the fullname is now split into firstname and lastname with the labels provided by you in step number 6.
 You’re all set!
 ​
 How this affects the Booking API requests

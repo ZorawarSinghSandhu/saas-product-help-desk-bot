@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/eventtype-specific-checking-for-conflicts
 
-
-Event Types
+Availability
 Event-Type Specific Checking for Conflicts
 Control which calendars are checked for conflicts on a per-event-type basis to manage availability for different meeting types.
 By default,

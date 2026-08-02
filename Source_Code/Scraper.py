@@ -5,6 +5,7 @@ import re
 url = "https://cal.com/help/welcome"
 
 while True:
+    
     response = requests.get(url)
     if response.status_code == 200:
         if "help/" not in response.url:
@@ -20,6 +21,7 @@ while True:
         with open("../Raw_text/" + file_name + ".txt", mode="w", newline='', encoding='utf-8') as f:
             header = soup.find(id = "header")
             content = soup.find(id = "content")
+            f.write(url)
             f.write("\n\n")
             f.write(header.get_text(separator = "\n", strip = True))
             f.write("\n")
@@ -31,10 +33,3 @@ while True:
         
     else:
         print(f"Extraction Failed! Currently at URL:\n{url}\n")
-        
-
-        
-        
-        
-    
-

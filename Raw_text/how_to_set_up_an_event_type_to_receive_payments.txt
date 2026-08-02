@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/how-to-receive-payments
 
-
-Event Types
+Payments & Seats
 How to set up an event type to receive payments
 Cal.com uses Stripe to allow you to receive payments when someone books your paid event type.
 To start taking payments, please follow these steps:

@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/disable-canceling-rescheduling
 
-
-Event Types
+Reschedule & cancel
 Disabling Cancelling and Rescheduling
 Cal.com
 allows you to control whether events can be cancelled or rescheduled after they’ve been booked. These options apply to

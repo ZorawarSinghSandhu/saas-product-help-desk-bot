@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/adding-zoom
 
-
-Event Types
+Basics
 Adding Zoom as the Meeting Location for Your Event Type
 To add Zoom as the meeting location for your event type, you need to follow these steps:
 Install the

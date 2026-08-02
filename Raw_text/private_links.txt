@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/private-links
 
-
-Event Types
+Privacy & security
 Private Links
 Private Links let you control access to your event types in a secure and flexible way. They are ideal for invite-only sessions, VIP access, pilot programs, or scenarios where you want to limit visibility and usage.
 Unlike standard public links,

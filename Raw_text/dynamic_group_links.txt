@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/dynamic
 
-
-Event Types
+Teams
 Dynamic Group Links
 With dynamic group links, bookers can dynamically create group links by adding users using + between their usernames.
 This feature allows you to append virtually unlimited number of Cal.com users by simply adding their usernames with a

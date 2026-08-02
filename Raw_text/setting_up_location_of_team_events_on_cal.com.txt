@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/setup-location
 
-
-Event Types
+Teams
 Setting up location of team events on cal.com
 When scheduling a Team Event on
 Cal.com

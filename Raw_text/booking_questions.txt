@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/booking-questions
 
-
-Event Types
+Booking form
 Booking Questions
 When you create a new event type, a few basic booking questions are already created for your new event type.
 If you’d like to collect more information about your attendees, you can use our booking questions feature and get the necessary information filled out by your attendees when booking. The booking questions can be either required or optional, depending on your needs.

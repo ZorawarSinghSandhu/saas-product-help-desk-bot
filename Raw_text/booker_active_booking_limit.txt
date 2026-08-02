@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/booker-active-booking-limit
 
-
-Event Types
+Limits & buffers
 Booker Active Booking Limit
 Limit the number of upcoming bookings a single booker can have for this event type.
 ​

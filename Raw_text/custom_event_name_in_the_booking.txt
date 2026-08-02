@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/custom-name
 
-
-Event Types
+Confirmation
 Custom event name in the booking
 Custom event names allow bookings to take in information from the booking and add it to the title. This feature allows the option to breaks away from the default “Event name” with “Attendee”.
 You can currently use the following variables here:

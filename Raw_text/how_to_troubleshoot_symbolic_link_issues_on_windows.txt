@@ -1,4 +1,4 @@
-
+https://cal.com/help/event-types/symbolic-issues
 
 Event Types
 How to troubleshoot symbolic link issues on Windows

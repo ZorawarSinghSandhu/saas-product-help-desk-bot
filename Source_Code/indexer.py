@@ -29,7 +29,7 @@ collection = client.create_collection(name="calcom_helpdesk")
 for chunk in chunks_list:
     chunk_ids.append(chunk["file_name"] + "_" + str(chunk["chunk_index"]))
     docs.append(chunk["raw_chunk"])
-    extra.append({"file_name": chunk["file_name"], "chunk_index": chunk["chunk_index"]})
+    extra.append({"file_name": chunk["file_name"], "chunk_index": chunk["chunk_index"], "file_url": chunk["file_url"], "file_heading": chunk["file_heading"]})
 
 
 collection.add(
@@ -39,6 +39,4 @@ collection.add(
     metadatas = extra
 )
 
-print(collection.count())
 
-# print(embeddings.shape)

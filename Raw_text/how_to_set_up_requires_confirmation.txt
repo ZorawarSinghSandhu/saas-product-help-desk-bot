@@ -1,6 +1,6 @@
+https://cal.com/help/event-types/how-to-requires
 
-
-Event Types
+Privacy & security
 How to set up requires confirmation
 To set requires confirmation configuration, you simply need to:
 1

@@ -1,6 +1,15 @@
+https://cal.com/help/event-types/custom-time-slots
 
-
-Event Types
+Limits & buffers
 Custom time-slot intervals
 Using the custom time-slot interval feature in your account settings, you can change the way your bookable appointment slots are displayed in your public booking page. The time slot intervals indicate the slots available for booking; therefore a smaller interval will mean lots of little slices, while a larger interval will mean a smaller amount of bigger durations.
 This change allows you to have more freedom in case of long event types by increasing the number of potential slots available, and in case of small event types, you can put a good amount of breather between them.
+By default, a time-slot interval is of the same length as the event type. However, within each individual event-type, you have the option to choose a different time-slot interval. Here’s how to do that:
+1
+Select your event type where you wish to customise the time-slot interval
+2
+To change the time-slot interval, click on the Limits & buffers tab.
+3
+Then, click on the time-slot interval select box to view the interval options in minutes and select the time interval of your choice
+4
+Click on Update to save your changes. Your event type should now consider the newly added time-slot interval
