@@ -39,4 +39,4 @@ collection.add(
     metadatas = extra
 )
 
-
+print(collection.count())

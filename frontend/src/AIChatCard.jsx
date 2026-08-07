@@ -28,7 +28,7 @@ export default function AIChatCard({ className }) {
     setMessages((prev) => [...prev, { sender: "user", text: question, citations: [] }]);
     setInput("");
     setIsTyping(true);
-    const url = "http://127.0.0.1:8000/ask";
+    const url = `${import.meta.env.VITE_API_URL}/ask`;
 
     try {
       const response = await fetch(url, {

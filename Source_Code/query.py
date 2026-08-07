@@ -26,6 +26,8 @@ def get_answer(query):
         
     file_headings = [chunk['file_heading'] for chunk in results['metadatas'][0]]
     
+    context = "\n\n".join(results["documents"][0])
+    
     response = groq_client.chat.completions.create(
         messages=[
             {
@@ -34,7 +36,7 @@ def get_answer(query):
                             Answer the user's question using ONLY the context below.
                             If the answer is not in the context, say "I don't have information about that.
                             Context:
-                            [{"\n\n".join(results["documents"][0])}]
+                            {context}
                             """ 
             },
             {

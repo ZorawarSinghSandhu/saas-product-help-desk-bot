@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from query import get_answer
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+import os
 
 
 class RequestBody(BaseModel):
@@ -17,9 +19,12 @@ class HealthResponse(BaseModel):
 
 app = FastAPI()
 
+load_dotenv(override=True)
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins = ["http://localhost:5173"],
+    allow_origins = [ALLOWED_ORIGINS],
     allow_headers = ["*"],
     allow_methods = ["*"]
     )

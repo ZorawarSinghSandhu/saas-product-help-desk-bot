@@ -9,6 +9,7 @@ def chunk_documents(folder_path):
     total_chunks = 0
     chunks_list = []
     
+    
     for file in folder_path.glob("*.txt"):
         content = ""
         heading = ""
@@ -29,4 +30,7 @@ def chunk_documents(folder_path):
             total_chunks += 1
             start += step_size
             chunk_index += 1
+    
     return chunks_list
+
+chunk_documents(folder_path=folder_path)
