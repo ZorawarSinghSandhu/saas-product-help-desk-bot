@@ -8,7 +8,8 @@ function cn(...classes) {
 
 export default function AIChatCard({ className }) {
   const [messages, setMessages] = useState([
-    { sender: "ai", text: "👋 Hello! I’m your AI assistant.", citations:[] },
+    { sender: "ai", text: `👋 Hi! I'm your Cal.com support assistant.
+I can help you with bookings, calendars, events, availability, and other Cal.com questions.`, citations:[] },
   ]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -86,7 +87,7 @@ export default function AIChatCard({ className }) {
     >
       {/* Animated Outer Border */}
       <motion.div
-        className="absolute inset-0 rounded-2xl border-2 border-white/20"
+        className="absolute inset-0 rounded-2xl border-2 border-indigo-500/40"
         animate={{ rotate: [0, 360] }}
         transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
       />
@@ -95,7 +96,7 @@ export default function AIChatCard({ className }) {
       <div className="relative flex flex-col w-full h-full rounded-xl border border-white/10 overflow-hidden bg-black/90 backdrop-blur-xl">
         {/* Inner Animated Background */}
         <motion.div
-          className="absolute inset-0 bg-gradient-to-br from-gray-800 via-black to-gray-900"
+          className="absolute inset-0 bg-gradient-to-br from-indigo-950 via-slate-950 to-purple-950"
           animate={{ backgroundPosition: ["0% 0%", "100% 100%", "0% 0%"] }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           style={{ backgroundSize: "200% 200%" }}
@@ -105,7 +106,7 @@ export default function AIChatCard({ className }) {
         {Array.from({ length: 20 }).map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-1 h-1 rounded-full bg-white/10"
+            className="absolute w-1 h-1 rounded-full bg-indigo-400/20"
             animate={{
               y: ["0%", "-140%"],
               x: [Math.random() * 200 - 100, Math.random() * 200 - 100],
@@ -123,7 +124,7 @@ export default function AIChatCard({ className }) {
 
         {/* Header */}
         <div className="px-4 py-3 border-b border-white/10 relative z-10">
-          <h2 className="text-lg font-semibold text-white">🤖 AI Assistant</h2>
+          <h2 className="text-lg font-semibold text-white">🤖 Cal.com Support AI</h2>
         </div>
 
         {/* Messages */}
@@ -137,8 +138,8 @@ export default function AIChatCard({ className }) {
               className={cn(
                 "px-3 py-2 rounded-xl max-w-[80%] shadow-md backdrop-blur-md",
                 msg.sender === "ai"
-                  ? "bg-white/10 text-white self-start"
-                  : "bg-white/30 text-black font-semibold self-end",
+                  ? "bg-slate-800/90 text-slate-100 self-start border border-indigo-500/15"
+                  : "bg-indigo-600 text-white self-end",
               )}
             >
               {msg.text}
@@ -151,7 +152,7 @@ export default function AIChatCard({ className }) {
                       href={citation.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-3 py-1 rounded-md bg-white/20 hover:bg-white/30 text-xs"
+                      className="px-3 py-1 rounded-md bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-300 text-xs"
                     >
                       {citation.heading}
                     </a>
@@ -179,7 +180,7 @@ export default function AIChatCard({ className }) {
         {/* Input */}
         <div className="flex items-center gap-2 p-3 border-t border-white/10 relative z-10">
           <input
-            className="flex-1 px-3 py-2 text-sm bg-black/50 rounded-lg border border-white/10 text-white focus:outline-none focus:ring-1 focus:ring-white/50"
+            className="flex-1 px-3 py-2 text-sm bg-white/10 rounded-lg border border-white/10 text-white focus:outline-none focus:ring-1 focus:ring-white/50"
             placeholder="Type a message..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
