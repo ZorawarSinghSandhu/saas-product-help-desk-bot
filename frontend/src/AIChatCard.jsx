@@ -15,7 +15,7 @@ export default function AIChatCard({ className }) {
   const SUGGESTIONS = [
     "How does seat billing work?",
     "What is active user billing?",
-    "How do I cancel my subscription?",
+    "Tell me about Delegation Credential",
     "What is high water mark billing?",
   ];
 
@@ -128,7 +128,7 @@ export default function AIChatCard({ className }) {
 
         {/* Messages */}
         {messages.length === 0 && (
-          <div className="flex flex-col items-center justify-center h-full gap-5 text-center">
+          <div className="relative z-20 flex flex-col items-center justify-center h-full gap-5 text-center">
             <p className="text-white text-xl font-semibold">
               How can I help you?
             </p>
@@ -137,7 +137,7 @@ export default function AIChatCard({ className }) {
                 <button
                   key={i}
                   onClick={() => handleSend(s)}
-                  className="text-left text-sm text-white/70 bg-white/10 hover:bg-white/20 border border-white/10 hover:border-white/20 rounded-xl px-4 py-3 transition-all duration-150"
+                  className="relative z-30 text-left text-sm text-white/70 bg-white/10 hover:bg-white/20 border border-white/10 hover:border-white/20 rounded-xl px-4 py-3 transition-all duration-150"
                 >
                   {s}
                 </button>
