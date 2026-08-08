@@ -8,12 +8,23 @@ function cn(...classes) {
 
 export default function AIChatCard({ className }) {
   const [messages, setMessages] = useState([
-    { sender: "ai", text: `👋 Hi! I'm your Cal.com support assistant.
-I can help you with bookings, calendars, events, availability, and other Cal.com questions.`, citations:[] },
+    {
+      sender: "ai",
+      text: `👋 Hi! I'm your Cal.com support assistant.
+I can help you with bookings, calendars, events, availability, and other Cal.com questions.`,
+      citations: [],
+    },
   ]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const messageRef = useRef(null);
+
+  const SUGGESTIONS = [
+    "How does seat billing work?",
+    "What is active user billing?",
+    "How do I cancel my subscription?",
+    "What is high water mark billing?",
+  ];
 
   useEffect(() => {
     if (messageRef.current) {
@@ -21,12 +32,14 @@ I can help you with bookings, calendars, events, availability, and other Cal.com
     }
   }, [messages]);
 
+  const handleSend = async (text) => {
+    const question = text || input;
+    if (!question.trim() || isTyping) return;
 
-  const handleSend = async () => {
-    if (!input.trim() || isTyping) return;
-    
-    const question = input;
-    setMessages((prev) => [...prev, { sender: "user", text: question, citations: [] }]);
+    setMessages((prev) => [
+      ...prev,
+      { sender: "user", text: question, citations: [] },
+    ]);
     setInput("");
     setIsTyping(true);
     const url = `${import.meta.env.VITE_API_URL}/ask`;
@@ -46,15 +59,14 @@ I can help you with bookings, calendars, events, availability, and other Cal.com
 
       const result = await response.json();
 
-      
       const unique_urls = [...new Set(result.sources)];
       const file_names = [...new Set(result.file_headings)];
 
       const citations = (unique_urls || []).map((url, index) => ({
         url: url,
-        heading: file_names?.[index]??"Source",
+        heading: file_names?.[index] ?? "Source",
       }));
-      
+
       setMessages((prev) => [
         ...prev,
         {
@@ -64,7 +76,6 @@ I can help you with bookings, calendars, events, availability, and other Cal.com
         },
       ]);
       setIsTyping(false);
-
     } catch (error) {
       setIsTyping(false);
       console.log(error.message);
@@ -74,8 +85,6 @@ I can help you with bookings, calendars, events, availability, and other Cal.com
         { sender: "ai", text: "Sorry, something went wrong." },
       ]);
     }
-
-    
   };
 
   return (
@@ -95,12 +104,7 @@ I can help you with bookings, calendars, events, availability, and other Cal.com
       {/* Inner Card */}
       <div className="relative flex flex-col w-full h-full rounded-xl border border-white/10 overflow-hidden bg-black/90 backdrop-blur-xl">
         {/* Inner Animated Background */}
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-br from-indigo-950 via-slate-950 to-purple-950"
-          animate={{ backgroundPosition: ["0% 0%", "100% 100%", "0% 0%"] }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          style={{ backgroundSize: "200% 200%" }}
-        />
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-950 via-slate-950 to-purple-950" />
 
         {/* Floating Particles */}
         {Array.from({ length: 20 }).map((_, i) => (
@@ -124,11 +128,35 @@ I can help you with bookings, calendars, events, availability, and other Cal.com
 
         {/* Header */}
         <div className="px-4 py-3 border-b border-white/10 relative z-10">
-          <h2 className="text-lg font-semibold text-white">🤖 Cal.com Support AI</h2>
+          <h2 className="text-lg font-semibold text-white">
+            🤖 Cal.com Support AI
+          </h2>
         </div>
 
         {/* Messages */}
-        <div ref={messageRef} className="flex-1 px-4 py-3 overflow-y-auto space-y-3 text-sm flex flex-col relative z-10">
+        {messages.length === 0 && (
+          <div className="flex flex-col items-center justify-center h-full gap-5 text-center">
+            <p className="text-white text-xl font-semibold">
+              How can I help you?
+            </p>
+            <div className="flex flex-col gap-2 w-full max-w-xs">
+              {SUGGESTIONS.map((s, i) => (
+                <button
+                  key={i}
+                  onClick={() => handleSend(s)}
+                  className="text-left text-sm text-white/70 bg-white/10 hover:bg-white/20 border border-white/10 hover:border-white/20 rounded-xl px-4 py-3 transition-all duration-150"
+                >
+                  {s}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div
+          ref={messageRef}
+          className="flex-1 px-4 py-3 overflow-y-auto space-y-3 text-sm flex flex-col relative z-10"
+        >
           {messages.map((msg, i) => (
             <motion.div
               key={i}
