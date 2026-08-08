@@ -89,21 +89,21 @@ export default function AIChatCard({ className }) {
     >
       {/* Animated Outer Border */}
       <motion.div
-        className="absolute inset-0 rounded-2xl border-2 border-indigo-500/40"
+        className="pointer-events-none absolute inset-0 rounded-2xl border-2 border-indigo-500/40"
         animate={{ rotate: [0, 360] }}
         transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
       />
 
       {/* Inner Card */}
-      <div className="relative flex flex-col w-full h-full rounded-xl border border-white/10 overflow-hidden bg-black/90 backdrop-blur-xl">
+      <div className="relative z-10 flex flex-col w-full h-full rounded-xl border border-white/10 overflow-hidden bg-black/90 backdrop-blur-xl">
         {/* Inner Animated Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-950 via-slate-950 to-purple-950" />
+        <div className="pointer-events-none absolute inset-0 z-0 bg-linear-to-br from-indigo-950 via-slate-950 to-purple-950" />
 
         {/* Floating Particles */}
         {Array.from({ length: 20 }).map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-1 h-1 rounded-full bg-indigo-400/20"
+            className="pointer-events-none absolute w-1 h-1 rounded-full bg-indigo-400/20"
             animate={{
               y: ["0%", "-140%"],
               x: [Math.random() * 200 - 100, Math.random() * 200 - 100],
