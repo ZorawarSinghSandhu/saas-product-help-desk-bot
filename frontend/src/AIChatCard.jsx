@@ -7,14 +7,7 @@ function cn(...classes) {
 }
 
 export default function AIChatCard({ className }) {
-  const [messages, setMessages] = useState([
-    {
-      sender: "ai",
-      text: `👋 Hi! I'm your Cal.com support assistant.
-I can help you with bookings, calendars, events, availability, and other Cal.com questions.`,
-      citations: [],
-    },
-  ]);
+  const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const messageRef = useRef(null);
