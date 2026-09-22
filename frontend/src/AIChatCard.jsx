@@ -12,11 +12,19 @@ export default function AIChatCard({ className }) {
   const [isTyping, setIsTyping] = useState(false);
   const messageRef = useRef(null);
 
+  // const SUGGESTIONS = [
+  //   "How does seat billing work?",
+  //   "What is active user billing?",
+  //   "Tell me about Delegation Credential",
+  //   "What is high water mark billing?",
+  // ];
+
+
   const SUGGESTIONS = [
-    "How does seat billing work?",
-    "What is active user billing?",
-    "Tell me about Delegation Credential",
-    "What is high water mark billing?",
+    "How can i create a new account?",
+    "What is the refund policy?",
+    "Tell me about the different premium plans",
+    "How do i reset my password?",
   ];
 
   useEffect(() => {
@@ -122,7 +130,7 @@ export default function AIChatCard({ className }) {
         {/* Header */}
         <div className="px-4 py-3 border-b border-white/10 relative z-10">
           <h2 className="text-lg font-semibold text-white">
-            🤖 Cal.com Support AI
+            🤖 SaaS HelpDesk AI
           </h2>
         </div>
 
