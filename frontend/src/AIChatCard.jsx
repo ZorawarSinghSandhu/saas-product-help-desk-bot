@@ -12,20 +12,20 @@ export default function AIChatCard({ className }) {
   const [isTyping, setIsTyping] = useState(false);
   const messageRef = useRef(null);
 
-  // const SUGGESTIONS = [
-  //   "How does seat billing work?",
-  //   "What is active user billing?",
-  //   "Tell me about Delegation Credential",
-  //   "What is high water mark billing?",
-  // ];
-
-
   const SUGGESTIONS = [
-    "How can i create a new account?",
-    "What is the refund policy?",
-    "Tell me about the different premium plans",
-    "How do i reset my password?",
+    "How does seat billing work?",
+    "What is active user billing?",
+    "Tell me about Delegation Credential",
+    "What is high water mark billing?",
   ];
+
+
+  // const SUGGESTIONS = [
+  //   "How can i create a new account?",
+  //   "What is the refund policy?",
+  //   "Tell me about the different premium plans",
+  //   "How do i reset my password?",
+  // ];
 
   useEffect(() => {
     if (messageRef.current) {
